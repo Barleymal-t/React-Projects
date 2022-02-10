@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    color: white;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+body {
+    background: radial-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url(./clifflolo_hills.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+}
+.hide {
+    display: none;
+}
+
+#mainapp{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 7% 0;
+    text-align: center;
+    color: white;
+    width: 35rem;
+    margin: auto;
+}
+
+#icon {
+    display: block;
+    font-size: 3rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    line-height: 4rem;
+}
+#bio {
+    border: 1px solid white;
+    border-left: 0;
+    border-right: 0;
+    padding: 3rem;
+    margin: 4rem 0;
+}
+#links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+#links button{
+    font-weight: 400;
+    color: grey;
+    text-transform: uppercase;
+    background-color: transparent;
+    height: 2.5rem;
+    width: 6rem;
+    border: none;
+}
+#links button:not(:first-child) {
+    border-left: 1px solid white;
+}
+
+@media screen and (max-width: 480px){
+    body {
+        font-size: 10px;
+    }
+    #links {
+        flex-direction: column;
+    }
+    #links button:not(:first-child) {
+        border-left: none;
+        border-top: 1px solid white;
+    }
+    
+}
