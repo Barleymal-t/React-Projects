@@ -13,7 +13,7 @@ const Contact = () => {
           id="close"
           onClick={() => {
             document.getElementById("contact").classList.toggle("hide");
-            document.getElementById("app").classList.toggle("hide");
+            document.getElementById("mainapp").classList.toggle("hide");
           }}
         />
       </i>
