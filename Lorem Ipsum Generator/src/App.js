@@ -8,7 +8,13 @@ function App() {
 
   const handleSubmit=(e)=>{
     e.preventDefault()
-    console.log('hello world') 
+    let number = parseInt(count);
+    if (count<=0){
+      number =1
+    }else if (count>data.length){
+      number=data.length
+    }
+    setText(data.slice(0,number))
   }
 
 
@@ -20,7 +26,13 @@ function App() {
             paragraphs:
           </label>
           <input type="number" name='amount' id='amount' value={count} onChange={(e)=>setCount(e.target.value)} />
+          <button className="btn" type='submit'>generate</button>
       </form>
+      <article className="lorem-text">
+      {text.map((item,index)=>{
+        return <p key={index}>{item}</p>
+      })}
+      </article>
     </section>
   );
 }
