@@ -9,8 +9,8 @@ const App = () => {
   return (
     <>
     <Navbar/>
-    <Hero/>
     <Sidebar/>
+    <Hero/>
     <Submenu/>
     </>
   )
